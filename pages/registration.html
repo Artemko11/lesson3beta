@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <title>Реєстрація</title>
+  <meta content='width=device-width, initial-scale=1' name='viewport'>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <ul class="header__navbar-list">
+      <li class="header__navbar-item">
+        <a href="../index.html" class="header__navbar-link">ГОЛОВНА</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="articles.html" class="header__navbar-link">СТАТТІ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="catalog.html" class="header__navbar-link">КАТАЛОГ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="gallery.html" class="header__navbar-link">ГАЛЕРЕЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="registration.html" class="header__navbar-link">РЕЄСТРАЦІЯ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="contacts.html" class="header__navbar-link">КОНТАКТИ</a>
+      </li>
+      <li class="header__navbar-item">
+        <a href="page-nav.html" class="header__navbar-link">НАВІГАЦІЯ</a>
+      </li>
+    </ul>
+  </header>
+
+  <div class="content container">
+    <h1>Реєстраційна форма</h1>
+    <form action="register.php" method="GET">
+      <fieldset class="form-style">
+        <legend>Основні данні</legend>
+        <div class="form-group">
+          <label class="label-form" for="name">ПІБ</label>
+          <input class="input-name" name="name" id="name" type="text" required placeholder="Прізвище Імя По-батькові">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="photo">Додайте фотографію</label>
+          <input name="photo" id="photo" type="file">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="email">Email</label>
+          <input name="email" id="email" type="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="password">Пароль</label>
+          <input name="password" id="password" type="password" required placeholder="Пароль">
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="site">Адреса сайту</label>
+          <input name="site" id="site" type="text" value="mysite.name">
+        </div>
+        <div class="form-group">
+          <div class="label-form">
+            Вкажіть ваш пол
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <input name="gender" value="male" id="male" type="radio">
+          <label for="male">Чоловік</label>
+        </div>
+        <div class="form-group-sm">
+          <input name="gender" value="female" id="female" type="radio">
+          <label for="female">Жінка</label>
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="date">Дата народження</label>
+          <input name="b-day" id="date" type="date">
+        </div>
+        <div class="form-group">
+          <div class="label-form">
+            Выберите вашу улюблену кухню
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="ua-kit" value="ua">
+            <label for="ua-kit">Українська</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="fr-kit" value="fr">
+            <label for="fr-kit">Французька</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="it-kit" value="it">
+            <label for="it-kit">Італійська</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="cn-kit" value="cn">
+            <label for="cn-kit">Китайська</label>
+          </div>
+        </div>
+        <div class="form-group-sm">
+          <div class="checkbox">
+            <input type="checkbox" name="kit" id="us-kit" value="us">
+            <label for="us-kit">Американська</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="label-form" for="txt">Інформація про себе</label>
+          <textarea name="txt" id="txt" cols="60" rows="2" placeholder="Інформація про себе"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-style">
+        <legend>Кнопки управління формою</legend>
+        <div class="form-group">
+          <button class="btn" type="submit">Зареєструватись</button>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="reset">Очистити форму</button>
+        </div>
+      </fieldset>
+    </form>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      &copy; Артем Романов </div>
+  </footer>
+
+</body>
+
+</html>
